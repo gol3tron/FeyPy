@@ -109,19 +109,57 @@ class Feynman(object):
     
     def showLaTeX(self):
         self.updateLaTeX()
+<<<<<<< HEAD
+        plt.text(7.0,8.0,'$%s$'%self.latex_string)
+=======
         plt.text(0.5,0.5,'$%s$'%self.latex_string)
+>>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 
     def updateLaTeX(self):
         freq_list = self.getTupleSet()  #list of frequency,polarization tuples
         chi_string = LaTeX.latex(freq_list)
         self.latex_string = chi_string
     
+<<<<<<< HEAD
+    def showDiagram(self,**kwargs):
+        
+        showtex = False
+        
+        # check if photon is spectrum photon!
+        # can add other conditional arguments here as necessary
+        for k,v in kwargs.iteritems():
+            if(k=="latex" and v==True):
+                showtex = True
+            else:
+                showtex = False
+    
+        freq_list = self.getTupleSet()
+        Diagram.diagram(freq_list)
+        if(showtex == True):
+            self.showLaTeX()
+
+    def showDiagSet(self):
+        
+        feyn_list = self.getPermutedFeynmans()
+        n_diagrams = len(feyn_list)
+    
+        for i in range(n_diagrams):
+            feyn_list[i].showDiagram()
+    
+
+    def addPhoton(self,photon):
+        self.photon_list.append(photon)
+    
+    def remPhoton(self):
+        self.photon_list.remove(self.photon_list[-1])
+=======
     def showDiagram(self):
         freq_list = self.getTupleSet()
         Diagram.diagram(freq_list)
     
     def addPhoton(self,photon):
         self.photon_list.append(photon)
+>>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 
     def getPhotonList(self):
         return self.photon_list

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from math import ceil,sqrt
 import numpy as np
+import Feynman
 import Diagram
 
 class Cascade(object):
@@ -39,6 +40,26 @@ class Cascade(object):
 #        return tuple_sets,vert_num,photon_lists
 
         Diagram.chain_diagram(tuple_sets[0],tuple_sets[1],0,vert_num)
+
+    def getPermutedCascade(self):
+        # get permutations for individual feynmans
+        feyn_perm_sets = []
+        N_feynmans = len(self.list_of_feynmans)
+        num_perms = []
+        casc_perms = []
+        
+        for i in range(N_feynmans):
+            temp_perms = self.list_of_feynmans[i].getPermutedFeynmans()
+            feyn_perm_sets.append(temp_perms)
+            num_perms.append(len(temp_perms))
+        
+        for j in range(len(feyn_perm_sets)):
+            for k in range(num_perms[j]):
+                temp_casc = Cascade.Cascade()
+
+        # TBC
+
+
 
     def getPermutations(self):
         return 0

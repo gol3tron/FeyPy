@@ -35,6 +35,10 @@ def molecule (vertices):
         
         hit enter
     """
+<<<<<<< HEAD
+    plt.figure()
+=======
+>>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
     
     # define font array for labels
     font = {'family': 'Bitstream Vera Sans',
