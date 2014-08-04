@@ -53,11 +53,12 @@ class Cascade(object):
             feyn_perm_sets.append(temp_perms)
             num_perms.append(len(temp_perms))
         
-        for j in range(len(feyn_perm_sets)):
-            for k in range(num_perms[j]):
-                temp_casc = Cascade.Cascade()
+        for i in range(N_feynmans):
+            for j in range(len(feyn_perm_sets)):
+                for k in range(num_perms[j]):
+                    temp_casc = Cascade.Cascade()
+#                    temp_casc.addFeynman(feyn_perm_sets[i][j],feyn_perm_sets[
 
-        # TBC
 
 
 
