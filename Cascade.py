@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from math import ceil,sqrt
 import numpy as np
 import Feynman
+import operator
 import Diagram
 
 class Cascade(object):
@@ -53,12 +54,16 @@ class Cascade(object):
             feyn_perm_sets.append(temp_perms)
             num_perms.append(len(temp_perms))
         
-        for i in range(N_feynmans):
-            for j in range(len(feyn_perm_sets)):
-                for k in range(num_perms[j]):
-                    temp_casc = Cascade.Cascade()
-#                    temp_casc.addFeynman(feyn_perm_sets[i][j],feyn_perm_sets[
+        
+        
+        
 
+#       this total_num_permuations is the total number of permuations of
+#       all feynman diagrams that are unique cascade diagrams
+#       the total number of permutations is equal to the product of the number
+#       of unique permutations of the individual feynman diagrams that make up
+#       the original cascade object
+        total_num_permuations = reduce(operator.mul,num_perms)
 
 
 
