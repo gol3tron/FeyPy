@@ -1,10 +1,5 @@
 import Feynman
 import Photon
-<<<<<<< HEAD
-=======
-import Mu
-import Omega
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 import CalcChi
 import Permutation
 import Molecule
@@ -13,23 +8,15 @@ import numpy as np
 
 feyn = Feynman.Feynman()
 
-<<<<<<< HEAD
 useFixed = True #set to false for fixed frequency photons
-=======
-useFixed = False #set to false for fixed frequency photons
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
-
 
 if(useFixed is True):
     # testing fixed frequency photons
     photon1 = Photon.Photon(1,0)
     photon2 = Photon.Photon(1,0)
     photon3 = Photon.Photon(-2,0)
-<<<<<<< HEAD
     photon4 = Photon.Photon(1,0)
     photon5 = Photon.Photon(-1,0)
-=======
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 
 else:
     # testing spectrum frequency photons
@@ -67,11 +54,8 @@ feyn.linkMolecule(molecule)
 feyn.addPhoton(photon1)
 feyn.addPhoton(photon2)
 feyn.addPhoton(photon3)
-<<<<<<< HEAD
 feyn.addPhoton(photon4)
 feyn.addPhoton(photon5)
-=======
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 
 # show feynman diagram
 #feyn.showDiagram()
@@ -96,7 +80,6 @@ feyn.addPhoton(photon5)
 # test out permutations
 # returns a set of feynman diagrams with photon frequency,polarization
 # tuples permuted according to Kyle's permutations code
-<<<<<<< HEAD
 #list_of_feynmans = feyn.getPermutedFeynmans()
 #feyn.showDiagSet()
 
@@ -116,24 +99,10 @@ next_feyn = Feynman.Feynman()
 next_feyn.addPhoton(photon6)
 next_feyn.addPhoton(photon7)
 next_feyn.addPhoton(photon8)
-=======
+
 list_of_feynmans = feyn.getPermutedFeynmans()
+list_of_feynmans_next = next_feyn.getPermutedFeynmans()
 
-# make phton3 virtual
-photon3.toggleVirtual()
-
-# make some more photons
-photon4 = Photon.Photon(1,0)
-photon5 = Photon.Photon(1,0)
-photon6 = Photon.Photon(-2,0)
-
-photon5.toggleVirtual()
-
-next_feyn = Feynman.Feynman()
-next_feyn.addPhoton(photon4)
-next_feyn.addPhoton(photon5)
-next_feyn.addPhoton(photon6)
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
 next_feyn.linkMolecule(molecule)
 
 # make a cascade object
