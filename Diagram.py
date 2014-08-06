@@ -35,10 +35,7 @@ def molecule (vertices):
         
         hit enter
     """
-<<<<<<< HEAD
     plt.figure()
-=======
->>>>>>> 14d74bf7c36ef498c17a4a34c3d2e8ee43fde64b
     
     # define font array for labels
     font = {'family': 'Bitstream Vera Sans',
@@ -360,3 +357,6 @@ def chain_diagram (photons_1,photons_2,connector,vert_num):
     plt.xlim(-2,verts_2[len(verts_2)-1][1])
     plt.ylim(-2,verts_2[len(verts_2)-1][1]+3)   
     plt.show()
+
+
+
