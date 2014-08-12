@@ -6,8 +6,10 @@ import Molecule
 import Cascade
 import numpy as np
 
+#create feynman object
 feyn = Feynman.Feynman()
 
+#create photons
 photon1 = Photon.Photon(1,0)
 photon2 = Photon.Photon(1,0)
 photon3 = Photon.Photon(-2,0)
@@ -42,33 +44,23 @@ feyn.addPhoton(photon1)
 feyn.addPhoton(photon2)
 feyn.addPhoton(photon3)
 
-# make phton3 virtual
-photon3.toggleVirtual()
+# show feynman diagram
+feyn.showDiagram()
 
-# make some more photons
-photon6 = Photon.Photon(1,0)
-photon7 = Photon.Photon(1,0)
-photon8 = Photon.Photon(-2,0)
+# check out the latex code!
+# we can either render it on a figure:
+feyn.showLaTeX()
 
-photon6.toggleVirtual()
+# or we can return it as a string for easy copying into TeX editors
+feyn.getLaTeX()
 
-next_feyn = Feynman.Feynman()
-next_feyn.addPhoton(photon6)
-next_feyn.addPhoton(photon7)
-next_feyn.addPhoton(photon8)
+# getChi!
+feyn.getChi()
 
+# test out permutations
+# returns a set of feynman diagrams with photon frequency,polarization
+# tuples permuted according to Kyle's permutations code
 list_of_feynmans = feyn.getPermutedFeynmans()
-list_of_feynmans_next = next_feyn.getPermutedFeynmans()
+feyn.showDiagSet()
 
-next_feyn.linkMolecule(molecule)
-
-# make a cascade object
-cascade = Cascade.Cascade()
-
-# add feynman objects to cascade
-cascade.addFeynman(feyn)
-cascade.addFeynman(next_feyn)
-
-# show cascaded diagram
-cascade.showDiagram()
 

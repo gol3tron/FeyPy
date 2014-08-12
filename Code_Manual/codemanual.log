@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  28 JUL 2014 15:40
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 AUG 2014 09:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -592,19 +592,19 @@ File: feyn_example1.jpg Graphic file (type jpg)
 Package pdftex.def Info: feyn_example1.jpg used on input line 114.
 (pdftex.def)             Requested size: 132.99654pt x 255.45375pt.
  [3 <./feyn_example1.jpg>]
-<feyn_ex1a.jpg, id=34, 642.4pt x 481.8pt>
+<feyn_ex1a.jpg, id=30, 642.4pt x 481.8pt>
 File: feyn_ex1a.jpg Graphic file (type jpg)
  <use feyn_ex1a.jpg>
 Package pdftex.def Info: feyn_ex1a.jpg used on input line 159.
 (pdftex.def)             Requested size: 159.62085pt x 119.71452pt.
 
-<feyn_ex1b.jpg, id=35, 642.4pt x 481.8pt>
+<feyn_ex1b.jpg, id=31, 642.4pt x 481.8pt>
 File: feyn_ex1b.jpg Graphic file (type jpg)
  <use feyn_ex1b.jpg>
 Package pdftex.def Info: feyn_ex1b.jpg used on input line 165.
 (pdftex.def)             Requested size: 159.62085pt x 119.71452pt.
 
-<feyn_ex1c.jpg, id=36, 642.4pt x 481.8pt>
+<feyn_ex1c.jpg, id=32, 642.4pt x 481.8pt>
 File: feyn_ex1c.jpg Graphic file (type jpg)
  <use feyn_ex1c.jpg>
 Package pdftex.def Info: feyn_ex1c.jpg used on input line 171.
@@ -616,13 +616,19 @@ File: chi_spectrum_fix.jpg Graphic file (type jpg)
 Package pdftex.def Info: chi_spectrum_fix.jpg used on input line 246.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
 
-[5 <./chi_spectrum_fix.jpg>] <cascading_ex4.jpg, id=44, 642.4pt x 481.8pt>
-File: cascading_ex4.jpg Graphic file (type jpg)
 
-<use cascading_ex4.jpg>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] <cascading_ex4.jpg, id=44, 642.4pt x 481.8pt>
+File: cascading_ex4.jpg Graphic file (type jpg)
+ <use cascading_ex4.jpg>
 Package pdftex.def Info: cascading_ex4.jpg used on input line 293.
 (pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
- [6 <./cascading_ex4.jpg>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./chi_spectrum_fix.jpg>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 309.
 
 
@@ -631,32 +637,34 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
- [7]
-(./codemanual.aux) ) 
+ [7 <./cascading_ex4.jpg>] (./codemanual.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  5180 strings out of 493633
  73484 string characters out of 3143378
- 147984 words of memory out of 3000000
+ 148034 words of memory out of 3000000
  8376 multiletter control sequences out of 15000+200000
  13239 words of font info for 51 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  38i,8n,38p,970b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on codemanual.pdf (7 pages, 439794 bytes).
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
+2011/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on codemanual.pdf (7 pages, 440813 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
