@@ -59,9 +59,9 @@ class Cascade(object):
             temp_casc = Cascade.Cascade()
             temp_casc.addFeynman(feyn_perm_sets[0][i])
         
-            for j in range(1,N_feynmans):
-                for k in range
-        
+#            for j in range(1,N_feynmans):
+#                for k in range
+
         
 
 #       this total_num_permuations is the total number of permuations of
